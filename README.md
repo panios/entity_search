@@ -4,6 +4,5 @@ Please find below the source code for paper "Strings and Things: A Semantic Sear
 
 
 <p align="center">
-  <img src="pic1.png" width="350" title="hover text">
-  <img src="ypic2.png" width="350" title="accessibility text">
+  <img src="pic1.png" title="Search Engine Frontend">
 </p>
