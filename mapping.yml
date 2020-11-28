@@ -1,0 +1,81 @@
+
+indexSettings = {
+    "settings": {
+        "index.number_of_replicas": 0,
+        "index.number_of_shards": 1,
+
+        "analysis": {
+            "analyzer": {
+                "analyzer_shingle": {
+                    "tokenizer": "standard",
+                    "filter": ["standard",
+                               "apostrophe",
+                                "filter_case_sensitive_stop_word",
+                               "lowercase",
+                               "filter_case_insensitive_stop_word",
+                               "filter_shingle",
+                               "trim",
+                               "my_length"]
+                },
+                "my_english_analyzer": {
+                    "tokenizer": "standard",
+                    "filter": [
+                        "standard",
+                        "lowercase",
+                        "apostrophe"
+                    ]
+                },
+                "lowerKeyword": {
+                    "type": "custom",
+                    "filter": [
+                        "lowercase"
+                    ],
+                    "tokenizer": "keyword"
+                }
+            },
+            "filter": {
+                "filter_shingle": {
+                    "type": "shingle",
+                    "max_shingle_size": 2,
+                    "min_shingle_size": 2,
+                    "filler_token": "",
+                    "output_unigrams": "true"
+                },
+                "filter_case_insensitive_stop_word": {
+                    "type": "stop",
+                    "stopwords": [
+                        "from", "for", "with", "a","of", "to", "by", "the", "and", "has", "had", "said",
+                        "was", "on", "this", "that", "its", "at", "or","which", "an", "in", "they", "his",
+                        "are", "were", "as", "if", "would",  "be"
+
+                    ]
+                },
+                "filter_case_sensitive_stop_word": {
+                    "type": "stop",
+                    "stopwords": [
+                        "will", "who", "it", "It", "is"
+                    ]
+                },
+
+                "my_length": {
+                    "type": "length",
+                    "min": 2
+                }
+            }
+        }
+    },
+
+    "mappings": {
+            "properties": {
+                "id": {"type": "keyword"},
+                "url": {"type": "keyword"},
+                "title": {"type": "annotated_text", "analyzer":"analyzer_shingle"},
+                "pre": {"type": "annotated_text", "analyzer":"analyzer_shingle"},
+                "quote": {"type": "annotated_text", "analyzer":"analyzer_shingle"},
+                "post": {"type": "annotated_text", "analyzer":"analyzer_shingle"},
+                "date": {"type": "date"},
+                "feedLink": {"type": "keyword"},
+                "gps": {"type": "geo_point"}
+                }
+            }
+        }
