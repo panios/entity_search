@@ -10,3 +10,7 @@ Here you can find the source code for the paper "Strings and Things: A Semantic 
 <p align="center">
   <img src="pic1.png" title="Search Engine Frontend">
 </p>
+
+<p align="center">
+  <img src="pic2.png" title="Search Engine results">
+</p>
