@@ -6,3 +6,7 @@ Please find below the source code for paper "Strings and Things: A Semantic Sear
 <p align="center">
   <img src="pic1.png" title="Search Engine Frontend">
 </p>
+
+<p align="center">
+  <img src="kibana.png" title="Kibana dashboard">
+</p>
