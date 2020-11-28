@@ -4,6 +4,8 @@ Here you can find the source code for the paper "Strings and Things: A Semantic 
 
 Below you can also see some cool aggregations and visualizations in Kibana that was done with Abhinay Pandya for the 2020 #WaterFrontHack Global Online Hackathon organised by the H2020 CUTLER project. 
 
+The cluster is hosted in the CSC cPouta infra. 
+
 <p align="center">
   <img src="kibana.png" title="Kibana dashboard">
 </p>
