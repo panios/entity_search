@@ -12,7 +12,7 @@ The cluster is hosted in the CSC cPouta infra.
   <img src="pic2.png" title="Search Engine results">
 </p>
 
-Below you can also see some cool aggregations and visualizations in Kibana that was done by Abhinay Pandya for the 2020 #WaterFrontHack Global Online Hackathon organised by the H2020 CUTLER project. You can also check his pitch video here: https://www.youtube.com/watch?v=IiJXlneg6HM
+Below you can also see some cool aggregations and visualizations in Kibana that was done by [Abhinay Pandya](https://github.com/abhinayoulu/waterfront-cityoptics) for the 2020 #WaterFrontHack Global Online Hackathon organised by the H2020 CUTLER project. You can also check his pitch video here: https://www.youtube.com/watch?v=IiJXlneg6HM
 
 
 <p align="center">
