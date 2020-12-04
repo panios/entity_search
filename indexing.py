@@ -63,7 +63,7 @@ def getLocations(text):
 
 
 def getEntities(text):
-
+#Methods and use of mapper-annotated-text can be found here: https://github.com/elastic/elasticsearch/blob/master/docs/plugins/mapper-annotated-text.asciidoc
     # Run the spacy model over the text
     parsedDoc = nlp(text)
     ents =[]
